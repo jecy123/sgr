@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sgrLib", "sgrLib.vcxproj", "{FEDED7BC-DA21-485C-A3D7-3EE587F72FE3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Bin|Win32 = Bin|Win32
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FEDED7BC-DA21-485C-A3D7-3EE587F72FE3}.Bin|Win32.ActiveCfg = Bin|Win32
+		{FEDED7BC-DA21-485C-A3D7-3EE587F72FE3}.Bin|Win32.Build.0 = Bin|Win32
+		{FEDED7BC-DA21-485C-A3D7-3EE587F72FE3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FEDED7BC-DA21-485C-A3D7-3EE587F72FE3}.Debug|Win32.Build.0 = Debug|Win32
+		{FEDED7BC-DA21-485C-A3D7-3EE587F72FE3}.Release|Win32.ActiveCfg = Release|Win32
+		{FEDED7BC-DA21-485C-A3D7-3EE587F72FE3}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

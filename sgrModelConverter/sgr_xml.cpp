@@ -38,6 +38,7 @@ int sgr::convert_xml_to_model(const string & xmlfile)
     {
         printf("Fail to get memory to read XML file: %s, %d\n", xmlfile.c_str(),
                 filesize);
+		system("pause");
         return -1;
     }
 
@@ -171,7 +172,8 @@ int sgr::convert_xml_to_model(const string & xmlfile)
     } catch (...)
     {
         features.clear();
-        printf("Error found when parse the XML file: %s\n", xmlfile.c_str());
+		printf("Error found when parse the XML file: %s\n", xmlfile.c_str());
+		system("pause");
     }
 
     if (xmldata)
@@ -180,7 +182,8 @@ int sgr::convert_xml_to_model(const string & xmlfile)
     if (features.size() <= 0)
     {
         printf("Fail to read valid data from the XML file: %s\n",
-                xmlfile.c_str());
+			xmlfile.c_str());
+		system("pause");
         return features.size();
     }
 
@@ -195,7 +198,8 @@ int sgr::convert_xml_to_model(const string & xmlfile)
 
     if (!outputfile.is_open())
     {
-        printf("Fail to recreate a new model file: %s\n", modelfile.c_str());
+		printf("Fail to recreate a new model file: %s\n", modelfile.c_str());
+		system("pause");
         return -1;
     }
 
@@ -260,7 +264,8 @@ int sgr::convert_xml_to_model(const string & xmlfile)
     {
         features.clear();
         printf("Error found when write data into the model file: %s\n",
-                modelfile.c_str());
+			modelfile.c_str());
+		system("pause");
     }
 
     try
@@ -270,5 +275,6 @@ int sgr::convert_xml_to_model(const string & xmlfile)
     {
     }
 
+	system("pause");
     return features.size();
 }

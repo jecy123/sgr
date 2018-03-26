@@ -26,7 +26,11 @@ int dtw(const vector<int> & s, const vector<int> & t)
     int n = s.size() >> 1;
     int m = t.size() >> 1;
 
-    int DTW[n+1][m+1];
+//#ifdef WIN32
+	vector< vector <int> > DTW(n + 1, vector<int>(m + 1));
+//#else
+    //int DTW[n+1][m+1];
+//#endif
     int i, j, cost;
 
     if(n > m)
